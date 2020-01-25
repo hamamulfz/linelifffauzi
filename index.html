@@ -26,9 +26,9 @@
     >
       <div class="page-header">
         <h1 align="center">
-          Catatan Harianku
+          My Counter
         </h1>
-        <ul class="nav nav-pills">
+        <!-- <ul class="nav nav-pills">
           <li>
             <a
               id="nav-list-catatan"
@@ -45,8 +45,29 @@
               >Tambah Catatan</a
             >
           </li>
-        </ul>
+        </ul> -->
       </div>
+      <h1 id="counter">1</h1>
+      <input
+        type="increment"
+        value="+1"
+        onclick="increment();"
+        class="btn btn-success btn-small"
+      />
+      <input
+        type="decrement"
+        value="- 1"
+        onclick="dencrement()"
+        class="btn btn-warning btn-small"
+      />
+
+      <input
+        type="reset"
+        value="Reset"
+        onclick="resetCounter()"
+        class="btn btn-danger btn-small"
+      />
+      <!-- 
       <div id="tambah-catatan" class="well" style="display:none;">
         <form id="form-data">
           <div id="nama-group" class="form-group">
@@ -181,7 +202,7 @@
 
       <div id="list-catatan" class="well">
         Pilih menu List Catatan untuk melihat catatan yang sudah dibuat.
-      </div>
+      </div> -->
 
       <!--Konten LIFF v2-->
 

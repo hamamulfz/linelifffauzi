@@ -53,6 +53,22 @@ function loadCatatan() {
   }
 }
 
+function increment() {
+  var num = document.getElementById("counter").innerHTML;
+  num = parseInt(num);
+  document.getElementById("counter").innerHTML = num + 1;
+}
+
+function dencrement() {
+  var num = document.getElementById("counter").innerHTML;
+  num = parseInt(num);
+  document.getElementById("counter").innerHTML = num - 1;
+}
+
+function resetCounter() {
+  document.getElementById("counter").innerHTML = "0";
+}
+
 function editData(id) {
   if (localStorage.list_data && localStorage.id_data) {
     list_data = JSON.parse(localStorage.getItem("list_data"));
