@@ -1,9 +1,9 @@
 window.onload = function() {
   const useNodeJS = false; // if you are not using a node server, set this value to false
-  const defaultLiffId = "line://app/1653717029-3WbdeWmN"; // change the default LIFF value if you are not using a node server
+  const defaultLiffId = "1653717029-3WbdeWmN"; // change the default LIFF value if you are not using a node server
 
   // DO NOT CHANGE THIS
-  let myLiffId = "line://app/1653717029-3WbdeWmN";
+  let myLiffId = "";
 
   // if node is used, fetch the environment variable and pass it to the LIFF method
   // otherwise, pass defaultLiffId
@@ -110,7 +110,7 @@ function registerButtonHandlers() {
     .getElementById("openWindowButton")
     .addEventListener("click", function() {
       liff.openWindow({
-        url: "https://catatanliffv2.herokuapp.com/", // Isi dengan Endpoint URL aplikasi web Anda
+        url: "https://lineliffalfarisi.herokuapp.com/", // Isi dengan Endpoint URL aplikasi web Anda
         external: true
       });
     });
